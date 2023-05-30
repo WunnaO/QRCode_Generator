@@ -7,9 +7,15 @@ const WiFiQRCode = () => {
     encryption: "WPA", // Choose the appropriate encryption type (WEP, WPA, or nopass)
   };
 
-  const DZKWifi = {
+  const DZKOffice = {
     ssid: "DZK Office",
     password: "DZk21@E5",
+    encryption: "WPA",
+  };
+
+  const DZK = {
+    ssid: "Digital Zeekwet",
+    password: "DZK2021@E5",
     encryption: "WPA",
   };
 
@@ -25,13 +31,17 @@ const WiFiQRCode = () => {
       <div>
         <p>DZK Office WifiQRCode</p>
         <QRCode
-          value={`WIFI:S:${DZKWifi.ssid};T:${DZKWifi.encryption};P:${DZKWifi.password};;`}
-          logoImage="../../assets/logo.png"
-          logoHeight={200}
-          logoWidth={200}
+          value={`WIFI:S:${DZKOffice.ssid};T:${DZKOffice.encryption};P:${DZKOffice.password};`}
         />
       </div>
-
+      <br />
+      <div>
+        <p>DZK WifiQRCode</p>
+        <QRCode
+          value={`WIFI:S:${DZK.ssid};T:${DZK.encryption};P:${DZK.password};`}
+        />
+      </div>
+      <br />
       <div className="flex">
         <div>
           <select name="" id="">

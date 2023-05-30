@@ -9,7 +9,7 @@ import CheckBoxField from "./components/CheckBoxField";
 import TextArea from "./components/TextArea";
 import FileUploadQRCode from "./components/FileQRCode/FileUploadQRCode";
 import WiFiQRCode from "./components/WifiQRCode/WiFiQRCode";
-import FileDatabase from "./components/FileQRCode/FileDatabase";
+import FireBaseQRCode from "./components/FireBase/FireBaseQRCode";
 
 function App() {
   const [state, setState] = useState({});
@@ -353,9 +353,9 @@ function App() {
       <br />
       <FileUploadQRCode />
       <br />
-      <FileDatabase />
-      <br />
       <WiFiQRCode />
+      <br />
+      <FireBaseQRCode />
     </div>
   );
 }
